@@ -1,0 +1,59 @@
+﻿2026-09-24T09:55:13.5715927Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-09-24T09:55:13.5716624Z with:
+2026-09-24T09:55:13.5716971Z   name: agent-output-fallback
+2026-09-24T09:55:13.5719334Z   path: /tmp/gh-aw/agent_output.json
+/tmp/gh-aw/safeoutputs.jsonl
+/tmp/gh-aw/agent_execution.json
+/tmp/gh-aw/agent_usage.jsonl
+/tmp/gh-aw/agent_usage.json
+/tmp/gh-aw/sandbox/firewall-audit-logs/api-proxy-logs/token-usage.jsonl
+/tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+/tmp/gh-aw/sandbox/firewall/audit/api-proxy-logs/token-usage.jsonl
+
+2026-09-24T09:55:13.5721647Z   if-no-files-found: ignore
+2026-09-24T09:55:13.5722056Z   compression-level: 6
+2026-09-24T09:55:13.5722436Z   overwrite: false
+2026-09-24T09:55:13.5723014Z   include-hidden-files: false
+2026-09-24T09:55:13.5723441Z   archive: true
+2026-09-24T09:55:13.5723804Z env:
+2026-09-24T09:55:13.5724140Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-24T09:55:13.5724612Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-24T09:55:13.5726192Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=matteogazzato/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=35983972808,github.run_id=35983972808,gh-aw.engine.id=copilot
+2026-09-24T09:55:13.5727761Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-24T09:55:13.5728273Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-24T09:55:13.5728792Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-24T09:55:13.5729206Z   DEFAULT_BRANCH: main
+2026-09-24T09:55:13.5729588Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-09-24T09:55:13.5729993Z   GH_AW_ASSETS_BRANCH: 
+2026-09-24T09:55:13.5730357Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-09-24T09:55:13.5730830Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-09-24T09:55:13.5731349Z   GH_AW_PR_HEAD_BASE_BRANCH: 
+2026-09-24T09:55:13.5731768Z   GH_AW_PR_HEAD_BASE_PR_NUMBER: 
+2026-09-24T09:55:13.5732184Z   GH_AW_PR_HEAD_BASE_REF: 
+2026-09-24T09:55:13.5732569Z   GH_AW_PR_HEAD_BASE_REPO: 
+2026-09-24T09:55:13.5733171Z   GH_AW_PR_HEAD_BASE_SHA: 
+2026-09-24T09:55:13.5733551Z   GH_AW_PR_HEAD_REPO: 
+2026-09-24T09:55:13.5733918Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-24T09:55:13.5734354Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-09-24T09:55:13.5734892Z   GITHUB_AW_OTEL_TRACE_ID: 28d2611f835cae9a05f94196f4e92203
+2026-09-24T09:55:13.5735455Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 33fc805f2391a6c3
+2026-09-24T09:55:13.5735986Z   GITHUB_AW_OTEL_JOB_START_MS: 1790243638317
+2026-09-24T09:55:13.5736504Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-09-24T09:55:13.5737006Z   GH_AW_AIC: 15.57758
+2026-09-24T09:55:13.5737372Z   GH_AW_AMBIENT_CONTEXT: 7280
+2026-09-24T09:55:13.5737792Z   GH_AW_PRIMARY_MODEL: claude-sonnet-5
+2026-09-24T09:55:13.5738273Z ##[endgroup]
+2026-09-24T09:55:13.7241572Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-09-24T09:55:13.7244912Z The least common ancestor is /tmp/gh-aw. This will be the root directory of the artifact
+2026-09-24T09:55:13.7245687Z With the provided path, there will be 5 files uploaded
+2026-09-24T09:55:13.7250004Z Artifact name is valid!
+2026-09-24T09:55:13.7250620Z Root directory input is valid!
+2026-09-24T09:55:14.0242956Z Uploading artifact: agent-output-fallback.zip
+2026-09-24T09:55:14.0283507Z Beginning upload of artifact content to blob storage
+2026-09-24T09:55:14.2191749Z Uploaded bytes 2380
+2026-09-24T09:55:14.2585921Z Finished uploading artifact content to blob storage!
+2026-09-24T09:55:14.2587109Z SHA256 digest of uploaded artifact is 6d73294599c013826433df2bc101839d7c9cb61af9397952b98432cf672da004
+2026-09-24T09:55:14.2588018Z Finalizing artifact upload
+2026-09-24T09:55:14.5169896Z Artifact agent-output-fallback successfully finalized. Artifact ID 10801292571
+2026-09-24T09:55:14.5171264Z Artifact agent-output-fallback has been successfully uploaded! Final size is 2380 bytes. Artifact ID is 10801292571
+2026-09-24T09:55:14.5175290Z Artifact download URL: https://github.com/matteogazzato/skills-agentic-workflows-that-read-the-room/actions/runs/35983972808/artifacts/10801292571

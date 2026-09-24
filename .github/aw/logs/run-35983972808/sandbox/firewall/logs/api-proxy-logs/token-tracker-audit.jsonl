@@ -1,0 +1,12 @@
+{"ts":1790243683527,"event":"TRACK_START","rid":"cdbf1fe2-a982-45b9-a0b3-83cdb807b72c","provider":"copilot","path":"/chat/completions","streaming":true,"ct":"text/event-stream","ce":"(none)","status":200}
+{"ts":1790243683980,"event":"TRACK_END","rid":"cdbf1fe2-a982-45b9-a0b3-83cdb807b72c","result":"ok","streaming":true,"model":"claude-sonnet-5","input":4729,"output":443,"cache_read":0}
+{"ts":1790243689210,"event":"TRACK_START","rid":"7291108d-1fe4-420b-af1c-c24d874e8cb5","provider":"copilot","path":"/chat/completions","streaming":true,"ct":"text/event-stream","ce":"(none)","status":200}
+{"ts":1790243690238,"event":"TRACK_END","rid":"7291108d-1fe4-420b-af1c-c24d874e8cb5","result":"ok","streaming":true,"model":"claude-sonnet-5","input":2,"output":456,"cache_read":25511}
+{"ts":1790243693958,"event":"TRACK_START","rid":"270c11aa-694b-4bc5-adb3-f31ccb2b1405","provider":"copilot","path":"/chat/completions","streaming":true,"ct":"text/event-stream","ce":"(none)","status":200}
+{"ts":1790243694950,"event":"TRACK_END","rid":"270c11aa-694b-4bc5-adb3-f31ccb2b1405","result":"ok","streaming":true,"model":"claude-sonnet-5","input":2,"output":338,"cache_read":35230}
+{"ts":1790243698894,"event":"TRACK_START","rid":"41f8f82e-8784-4797-aed5-3dc2158618e4","provider":"copilot","path":"/chat/completions","streaming":true,"ct":"text/event-stream","ce":"(none)","status":200}
+{"ts":1790243698902,"event":"TRACK_END","rid":"41f8f82e-8784-4797-aed5-3dc2158618e4","result":"ok","streaming":true,"model":"claude-sonnet-5","input":2,"output":260,"cache_read":35690}
+{"ts":1790243703863,"event":"TRACK_START","rid":"95a98c20-2fb2-42c3-8a6f-580f50b04b4b","provider":"copilot","path":"/chat/completions","streaming":true,"ct":"text/event-stream","ce":"(none)","status":200}
+{"ts":1790243704807,"event":"TRACK_END","rid":"95a98c20-2fb2-42c3-8a6f-580f50b04b4b","result":"ok","streaming":true,"model":"claude-sonnet-5","input":2,"output":516,"cache_read":35815}
+{"ts":1790243706609,"event":"TRACK_START","rid":"f91b843f-5118-4375-a95a-82445bfcd295","provider":"copilot","path":"/chat/completions","streaming":true,"ct":"text/event-stream","ce":"(none)","status":200}
+{"ts":1790243708152,"event":"TRACK_END","rid":"f91b843f-5118-4375-a95a-82445bfcd295","result":"ok","streaming":true,"model":"claude-sonnet-5","input":2,"output":168,"cache_read":35968}

@@ -1,0 +1,46 @@
+﻿2026-09-24T09:53:55.9589387Z ##[group]Run github/gh-aw-actions/setup@924af5fdc64061cfbf66fb584c8b07e2ac230c60
+2026-09-24T09:53:55.9591235Z with:
+2026-09-24T09:53:55.9592181Z   destination: /home/runner/work/_temp/gh-aw/actions
+2026-09-24T09:53:55.9593622Z   job-name: agent
+2026-09-24T09:53:55.9594560Z   trace-id: 28d2611f835cae9a05f94196f4e92203
+2026-09-24T09:53:55.9595698Z   parent-span-id: b1be0cd0bcab41bc
+2026-09-24T09:53:55.9596773Z   safe-output-artifact-client: false
+2026-09-24T09:53:55.9598007Z env:
+2026-09-24T09:53:55.9598859Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-24T09:53:55.9599922Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-24T09:53:55.9603241Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=matteogazzato/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=35983972808,github.run_id=35983972808,gh-aw.engine.id=copilot
+2026-09-24T09:53:55.9606354Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-24T09:53:55.9607399Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-24T09:53:55.9608608Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-24T09:53:55.9609559Z   DEFAULT_BRANCH: main
+2026-09-24T09:53:55.9610453Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-09-24T09:53:55.9611444Z   GH_AW_ASSETS_BRANCH: 
+2026-09-24T09:53:55.9612362Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-09-24T09:53:55.9613552Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-09-24T09:53:55.9614723Z   GH_AW_PR_HEAD_BASE_BRANCH: 
+2026-09-24T09:53:55.9615700Z   GH_AW_PR_HEAD_BASE_PR_NUMBER: 
+2026-09-24T09:53:55.9616673Z   GH_AW_PR_HEAD_BASE_REF: 
+2026-09-24T09:53:55.9617887Z   GH_AW_PR_HEAD_BASE_REPO: 
+2026-09-24T09:53:55.9618828Z   GH_AW_PR_HEAD_BASE_SHA: 
+2026-09-24T09:53:55.9619744Z   GH_AW_PR_HEAD_REPO: 
+2026-09-24T09:53:55.9620661Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-24T09:53:55.9621679Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-09-24T09:53:55.9622987Z   GH_AW_SETUP_WORKFLOW_NAME: update-github-info
+2026-09-24T09:53:55.9625379Z   GH_AW_CURRENT_WORKFLOW_REF: matteogazzato/skills-agentic-workflows-that-read-the-room/.github/workflows/update-github-info.lock.yml@refs/heads/main
+2026-09-24T09:53:55.9627743Z   GH_AW_INFO_VERSION: 1.0.87
+2026-09-24T09:53:55.9628707Z   GH_AW_INFO_AWF_VERSION: v0.28.23
+2026-09-24T09:53:55.9629709Z   GH_AW_INFO_ENGINE_ID: copilot
+2026-09-24T09:53:55.9630722Z ##[endgroup]
+2026-09-24T09:53:57.8486863Z Successfully copied 515 files to /home/runner/work/_temp/gh-aw/actions
+2026-09-24T09:53:58.1550385Z Successfully copied 26 mcp-scripts files to /home/runner/work/_temp/gh-aw/mcp-scripts
+2026-09-24T09:53:58.2975781Z Successfully copied 88 safe-outputs files to /home/runner/work/_temp/gh-aw/safeoutputs
+2026-09-24T09:53:58.3145702Z [info] [otlp] INPUT_TRACE_ID=28d2611f835cae9a05f94196f4e92203 (will reuse activation trace)
+2026-09-24T09:53:58.3147019Z [info] [otlp] INPUT_PARENT_SPAN_ID=b1be0cd0bcab41bc (will parent setup span)
+2026-09-24T09:53:58.3149027Z [info] [otlp] no OTLP endpoints have usable credentials, skipping setup span
+2026-09-24T09:53:58.3172562Z [info] [otlp] resolved trace-id=28d2611f835cae9a05f94196f4e92203
+2026-09-24T09:53:58.3173710Z [info] [otlp] trace-id=28d2611f835cae9a05f94196f4e92203 written to GITHUB_OUTPUT
+2026-09-24T09:53:58.3176274Z [info] [otlp] span-id=33fc805f2391a6c3 written to GITHUB_OUTPUT
+2026-09-24T09:53:58.3176815Z [info] [otlp] parent-span-id=b1be0cd0bcab41bc written to GITHUB_OUTPUT
+2026-09-24T09:53:58.3177521Z [info] [otlp] GITHUB_AW_OTEL_TRACE_ID written to GITHUB_ENV
+2026-09-24T09:53:58.3178172Z [info] [otlp] GITHUB_AW_OTEL_PARENT_SPAN_ID written to GITHUB_ENV
+2026-09-24T09:53:58.3178924Z [info] [otlp] GITHUB_AW_OTEL_JOB_START_MS written to GITHUB_ENV

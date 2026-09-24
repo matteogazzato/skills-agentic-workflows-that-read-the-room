@@ -1,0 +1,38 @@
+﻿2026-09-24T09:53:35.7777729Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-24T09:53:35.7778652Z with:
+2026-09-24T09:53:35.7782897Z   github-token: ***
+2026-09-24T09:53:35.7785218Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'check_daily_aic_workflow_guardrail.cjs'));
+await main();
+
+2026-09-24T09:53:35.7789097Z   debug: false
+2026-09-24T09:53:35.7789695Z   user-agent: actions/github-script
+2026-09-24T09:53:35.7790279Z   result-encoding: json
+2026-09-24T09:53:35.7790783Z   retries: 0
+2026-09-24T09:53:35.7791303Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-24T09:53:35.7792811Z env:
+2026-09-24T09:53:35.7795022Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-24T09:53:35.7798378Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-24T09:53:35.7808675Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=matteogazzato/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=35983972808,github.run_id=35983972808,gh-aw.engine.id=copilot
+2026-09-24T09:53:35.7814073Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-24T09:53:35.7814758Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-24T09:53:35.7816565Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-24T09:53:35.7817479Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-09-24T09:53:35.7818069Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-24T09:53:35.7818695Z   GITHUB_AW_OTEL_TRACE_ID: 28d2611f835cae9a05f94196f4e92203
+2026-09-24T09:53:35.7819476Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b1be0cd0bcab41bc
+2026-09-24T09:53:35.7820742Z   GITHUB_AW_OTEL_JOB_START_MS: 1790243614845
+2026-09-24T09:53:35.7821474Z   GH_AW_WORKFLOW_NAME: update-github-info
+2026-09-24T09:53:35.7822096Z   GH_AW_WORKFLOW_ID: update-github-info
+2026-09-24T09:53:35.7823402Z   GH_AW_RUN_URL: https://github.com/matteogazzato/skills-agentic-workflows-that-read-the-room/actions/runs/35983972808
+2026-09-24T09:53:35.7824513Z   GH_AW_WORKFLOW_DISPATCH_AW_CONTEXT: 
+2026-09-24T09:53:35.7825106Z   GH_AW_HAS_SLASH_COMMAND: false
+2026-09-24T09:53:35.7825666Z   GH_AW_HAS_LABEL_COMMAND: false
+2026-09-24T09:53:35.7829801Z   GH_AW_GITHUB_TOKEN: ***
+2026-09-24T09:53:35.7830351Z   GH_AW_MAX_AI_CREDITS: 1000
+2026-09-24T09:53:35.7830880Z ##[endgroup]
+2026-09-24T09:53:36.0964446Z [daily-workflow-aic] Resolved daily AIC guardrail limits: {"dailyAICThreshold":5000,"perRunMaxAICredits":1000,"perRunFallbackAvailable":true}
+2026-09-24T09:53:36.0986330Z Skipping daily workflow AI Credits guardrail for manual or command-driven runs.

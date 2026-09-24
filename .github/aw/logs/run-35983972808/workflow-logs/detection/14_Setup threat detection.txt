@@ -1,0 +1,37 @@
+﻿2026-09-24T09:55:49.2025195Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-24T09:55:49.2025541Z with:
+2026-09-24T09:55:49.2026496Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'setup_threat_detection.cjs'));
+await main();
+
+2026-09-24T09:55:49.2029717Z   github-token: ***
+2026-09-24T09:55:49.2029935Z   debug: false
+2026-09-24T09:55:49.2030132Z   user-agent: actions/github-script
+2026-09-24T09:55:49.2030570Z   result-encoding: json
+2026-09-24T09:55:49.2030780Z   retries: 0
+2026-09-24T09:55:49.2030988Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-24T09:55:49.2031243Z env:
+2026-09-24T09:55:49.2031430Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-24T09:55:49.2031701Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-24T09:55:49.2032462Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=matteogazzato/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=35983972808,github.run_id=35983972808,gh-aw.engine.id=copilot
+2026-09-24T09:55:49.2033222Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-24T09:55:49.2033475Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-24T09:55:49.2033744Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-24T09:55:49.2033976Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-24T09:55:49.2034233Z   GITHUB_AW_OTEL_TRACE_ID: 28d2611f835cae9a05f94196f4e92203
+2026-09-24T09:55:49.2034531Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 25dfe4067bc218c3
+2026-09-24T09:55:49.2034814Z   GITHUB_AW_OTEL_JOB_START_MS: 1790243726559
+2026-09-24T09:55:49.2035071Z   WORKFLOW_NAME: update-github-info
+2026-09-24T09:55:49.2035563Z   WORKFLOW_DESCRIPTION: Update GitHub information content from the latest GitHub Blog posts, changelog, and Awesome Copilot workflow resources.
+2026-09-24T09:55:49.2036055Z   HAS_PATCH: false
+2026-09-24T09:55:49.2036264Z   GH_AW_DETECTION_CONTINUE_ON_ERROR: true
+2026-09-24T09:55:49.2036523Z   GH_AW_DETECTION_SKIP_PROMPT_SUMMARY: true
+2026-09-24T09:55:49.2036775Z ##[endgroup]
+2026-09-24T09:55:49.2838493Z Removed framework system prompt block from /tmp/gh-aw/threat-detection/aw-prompts/prompt.txt
+2026-09-24T09:55:49.2839368Z Prompt file found: /tmp/gh-aw/threat-detection/aw-prompts/prompt.txt (738 bytes)
+2026-09-24T09:55:49.2840023Z Agent output file found: /tmp/gh-aw/threat-detection/agent_output.json (541 bytes)
+2026-09-24T09:55:49.2846708Z Skipping threat detection prompt step summary (external detector renders its own prompt)
+2026-09-24T09:55:49.2847348Z Threat detection setup completed

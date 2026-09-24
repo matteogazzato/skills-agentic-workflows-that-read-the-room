@@ -1,0 +1,22 @@
+﻿2026-09-24T09:55:53.5117945Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/install_threat_detect_binary.sh" v0.5.2 --artifact-base-url https://github.com/github/gh-aw-threat-detection/releases/download --sha256-amd64 b4ecda6a8f1ee09913c40b58e5e9d3337d2173618d41b1bfdef9207e4e7959b9 --sha256-arm64 f6260a0f9ad72bcb67c7af19c4ce262ca34e2c3d5ccbf912832a8bd277200904
+2026-09-24T09:55:53.5119845Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/install_threat_detect_binary.sh" v0.5.2 --artifact-base-url https://github.com/github/gh-aw-threat-detection/releases/download --sha256-amd64 b4ecda6a8f1ee09913c40b58e5e9d3337d2173618d41b1bfdef9207e4e7959b9 --sha256-arm64 f6260a0f9ad72bcb67c7af19c4ce262ca34e2c3d5ccbf912832a8bd277200904[0m
+2026-09-24T09:55:53.5155089Z shell: /usr/bin/bash -e {0}
+2026-09-24T09:55:53.5155322Z env:
+2026-09-24T09:55:53.5155522Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-24T09:55:53.5155779Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-24T09:55:53.5156533Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=matteogazzato/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=35983972808,github.run_id=35983972808,gh-aw.engine.id=copilot
+2026-09-24T09:55:53.5157284Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-24T09:55:53.5157542Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-24T09:55:53.5157813Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-24T09:55:53.5158034Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-24T09:55:53.5158294Z   GITHUB_AW_OTEL_TRACE_ID: 28d2611f835cae9a05f94196f4e92203
+2026-09-24T09:55:53.5158587Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 25dfe4067bc218c3
+2026-09-24T09:55:53.5158863Z   GITHUB_AW_OTEL_JOB_START_MS: 1790243726559
+2026-09-24T09:55:53.5159147Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-09-24T09:55:53.5159400Z ##[endgroup]
+2026-09-24T09:55:53.5250451Z Installing threat-detect with compiler-pinned checksum verification (version: v0.5.2, os: Linux, arch: x86_64)
+2026-09-24T09:55:53.5348874Z Downloading binary from "https://github.com/github/gh-aw-threat-detection/releases/download/v0.5.2/threat-detect-linux-amd64"...
+2026-09-24T09:55:53.7374440Z Verifying SHA256 checksum for threat-detect-linux-amd64...
+2026-09-24T09:55:53.7417192Z ✓ Checksum verification passed for threat-detect-linux-amd64
+2026-09-24T09:55:53.7513592Z threat-detect v0.5.2
+2026-09-24T09:55:53.7518144Z ✓ threat-detect installation complete
