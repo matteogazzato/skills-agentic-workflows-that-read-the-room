@@ -10,7 +10,7 @@ tools:
   edit: true
   github:
     toolsets: [repos]
-  web-fetch:git 
+  web-fetch: 
 network:
   allowed:
     - github.blog
