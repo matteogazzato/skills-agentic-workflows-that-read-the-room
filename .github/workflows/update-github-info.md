@@ -30,4 +30,4 @@ Keep `site/content/github-info.md` current for Mona to review.
 3. Fetch https://github.blog/changelog/ with `web-fetch`.
 4. Fetch https://awesome-copilot.github.com/workflows/ with `web-fetch`.
 5. Update `site/content/github-info.md` with concise, relevant, and accurate information informed by those sources and Mona's notes. Do not change other files.
-6. Use the `create-pull-request` safe output to open a draft pull request for Mona to review. Summarize the source material and the content changes in the pull request body.
+6. Don't write directly to `main`. Use the `create-pull-request` and rely on `safe-outputs` to open a pull request for Mona to review. Use a pull request title that mentions Mona or GitHub Info. Summarize the source material and the content changes in the pull request body.
