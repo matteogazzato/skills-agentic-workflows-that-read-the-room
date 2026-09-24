@@ -1,0 +1,32 @@
+﻿2026-09-24T09:56:54.8019805Z Current runner version: '2.337.0'
+2026-09-24T09:56:54.8047869Z ##[group]Runner Image Provisioner
+2026-09-24T09:56:54.8048748Z Hosted Compute Agent
+2026-09-24T09:56:54.8049365Z Version: 20260828.587
+2026-09-24T09:56:54.8050782Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+2026-09-24T09:56:54.8051512Z Build Date: 2026-08-28T16:44:25Z
+2026-09-24T09:56:54.8052254Z Worker ID: {7c318839-f9a5-4a32-a72b-ca7f8a91971f}
+2026-09-24T09:56:54.8052953Z Azure Region: centralus
+2026-09-24T09:56:54.8053557Z ##[endgroup]
+2026-09-24T09:56:54.8055219Z ##[group]VM Image
+2026-09-24T09:56:54.8056188Z - OS: Linux (x64)
+2026-09-24T09:56:54.8056861Z - Source: Docker
+2026-09-24T09:56:54.8057394Z - Name: ubuntu:24.04
+2026-09-24T09:56:54.8057922Z - Version: 20260922.6.5
+2026-09-24T09:56:54.8058528Z ##[endgroup]
+2026-09-24T09:56:54.8059856Z ##[group]GITHUB_TOKEN Permissions
+2026-09-24T09:56:54.8061884Z Actions: read
+2026-09-24T09:56:54.8062497Z Contents: write
+2026-09-24T09:56:54.8063142Z Issues: write
+2026-09-24T09:56:54.8063679Z Metadata: read
+2026-09-24T09:56:54.8068097Z PullRequests: write
+2026-09-24T09:56:54.8068730Z ##[endgroup]
+2026-09-24T09:56:54.8071071Z Secret source: Actions
+2026-09-24T09:56:54.8072054Z Cache mode: write
+2026-09-24T09:56:54.8072993Z Prepare workflow directory
+2026-09-24T09:56:54.8731671Z Prepare all required actions
+2026-09-24T09:56:54.8785756Z Getting action download info
+2026-09-24T09:56:55.3012848Z Download action repository 'github/gh-aw-actions@924af5fdc64061cfbf66fb584c8b07e2ac230c60' (SHA:924af5fdc64061cfbf66fb584c8b07e2ac230c60)
+2026-09-24T09:56:56.0395135Z Download action repository 'actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c' (SHA:3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c)
+2026-09-24T09:56:56.3883045Z Download action repository 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+2026-09-24T09:56:56.4777884Z Download action repository 'actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3' (SHA:3a2844b7e9c422d3c10d287c895573f7108da1b3)
+2026-09-24T09:56:56.9819030Z Complete job name: conclusion

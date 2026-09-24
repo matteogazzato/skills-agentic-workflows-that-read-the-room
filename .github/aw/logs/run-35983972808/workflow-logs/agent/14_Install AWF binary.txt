@@ -1,0 +1,37 @@
+﻿2026-09-24T09:54:05.2111727Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/install_awf_binary.sh" v0.28.23 --rootless
+2026-09-24T09:54:05.2112950Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/install_awf_binary.sh" v0.28.23 --rootless[0m
+2026-09-24T09:54:05.2159128Z shell: /usr/bin/bash -e {0}
+2026-09-24T09:54:05.2159414Z env:
+2026-09-24T09:54:05.2159639Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-24T09:54:05.2159997Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-24T09:54:05.2160993Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=matteogazzato/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=35983972808,github.run_id=35983972808,gh-aw.engine.id=copilot
+2026-09-24T09:54:05.2161876Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-24T09:54:05.2162172Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-24T09:54:05.2162485Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-24T09:54:05.2162988Z   DEFAULT_BRANCH: main
+2026-09-24T09:54:05.2163266Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-09-24T09:54:05.2163536Z   GH_AW_ASSETS_BRANCH: 
+2026-09-24T09:54:05.2163801Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-09-24T09:54:05.2164088Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-09-24T09:54:05.2164407Z   GH_AW_PR_HEAD_BASE_BRANCH: 
+2026-09-24T09:54:05.2164684Z   GH_AW_PR_HEAD_BASE_PR_NUMBER: 
+2026-09-24T09:54:05.2164951Z   GH_AW_PR_HEAD_BASE_REF: 
+2026-09-24T09:54:05.2165193Z   GH_AW_PR_HEAD_BASE_REPO: 
+2026-09-24T09:54:05.2165649Z   GH_AW_PR_HEAD_BASE_SHA: 
+2026-09-24T09:54:05.2165881Z   GH_AW_PR_HEAD_REPO: 
+2026-09-24T09:54:05.2166111Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-24T09:54:05.2166384Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-09-24T09:54:05.2166744Z   GITHUB_AW_OTEL_TRACE_ID: 28d2611f835cae9a05f94196f4e92203
+2026-09-24T09:54:05.2167119Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 33fc805f2391a6c3
+2026-09-24T09:54:05.2167471Z   GITHUB_AW_OTEL_JOB_START_MS: 1790243638317
+2026-09-24T09:54:05.2167761Z ##[endgroup]
+2026-09-24T09:54:05.2269520Z Installing awf with checksum verification (version: v0.28.23, os: Linux, arch: x86_64)
+2026-09-24T09:54:05.2297774Z Cleaning up stale AWF chroot directories...
+2026-09-24T09:54:05.2569067Z Downloading checksums from 'https://github.com/github/gh-aw-firewall/releases/download/v0.28.23/checksums.txt'...
+2026-09-24T09:54:05.4779296Z Node.js >= 20 detected (v22.23.2), using lightweight bundle...
+2026-09-24T09:54:05.4780320Z Downloading bundle from 'https://github.com/github/gh-aw-firewall/releases/download/v0.28.23/awf-bundle.js'...
+2026-09-24T09:54:05.7947381Z Verifying SHA256 checksum for awf-bundle.js...
+2026-09-24T09:54:05.8020842Z ✓ Checksum verification passed for awf-bundle.js
+2026-09-24T09:54:05.8082977Z ✓ Installed awf bundle to /home/runner/.local/lib/awf/awf-bundle.js
+2026-09-24T09:54:06.0976222Z 0.28.23
+2026-09-24T09:54:06.1042427Z ✓ AWF installation complete

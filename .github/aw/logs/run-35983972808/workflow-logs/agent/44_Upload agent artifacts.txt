@@ -1,0 +1,69 @@
+﻿2026-09-24T09:55:14.5315951Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-09-24T09:55:14.5316398Z with:
+2026-09-24T09:55:14.5316942Z   name: agent
+2026-09-24T09:55:14.5319147Z   path: /tmp/gh-aw/aw-prompts/prompt.txt
+/tmp/gh-aw/agent_execution.json
+/tmp/gh-aw/sandbox/agent/logs/
+/tmp/gh-aw/redacted-urls.log
+/tmp/gh-aw/mcp-logs/
+/tmp/gh-aw/agent_usage.json
+/tmp/gh-aw/agent_usage.jsonl
+/tmp/gh-aw/agent-stdio.log
+/tmp/gh-aw/pre-agent-audit.txt
+/tmp/gh-aw/github_rate_limits.jsonl
+/tmp/gh-aw/otel.jsonl
+/tmp/gh-aw/otlp-export-errors.jsonl
+/tmp/gh-aw/safeoutputs.jsonl
+/tmp/gh-aw/agent_output.json
+/tmp/gh-aw/aw-*.patch
+/tmp/gh-aw/aw-*.bundle
+/tmp/gh-aw/awf-config.json
+/tmp/gh-aw/sandbox/firewall/logs/
+/tmp/gh-aw/sandbox/firewall/audit/
+/tmp/gh-aw/sandbox/firewall/awf-reflect.json
+
+2026-09-24T09:55:14.5321466Z   if-no-files-found: ignore
+2026-09-24T09:55:14.5321924Z   compression-level: 6
+2026-09-24T09:55:14.5322324Z   overwrite: false
+2026-09-24T09:55:14.5322998Z   include-hidden-files: false
+2026-09-24T09:55:14.5323607Z   archive: true
+2026-09-24T09:55:14.5324018Z env:
+2026-09-24T09:55:14.5324422Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-24T09:55:14.5324939Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-24T09:55:14.5326074Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=matteogazzato/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=35983972808,github.run_id=35983972808,gh-aw.engine.id=copilot
+2026-09-24T09:55:14.5327145Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-24T09:55:14.5327651Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-24T09:55:14.5328126Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-24T09:55:14.5328587Z   DEFAULT_BRANCH: main
+2026-09-24T09:55:14.5328938Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-09-24T09:55:14.5329486Z   GH_AW_ASSETS_BRANCH: 
+2026-09-24T09:55:14.5329864Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-09-24T09:55:14.5330388Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-09-24T09:55:14.5330843Z   GH_AW_PR_HEAD_BASE_BRANCH: 
+2026-09-24T09:55:14.5331369Z   GH_AW_PR_HEAD_BASE_PR_NUMBER: 
+2026-09-24T09:55:14.5331782Z   GH_AW_PR_HEAD_BASE_REF: 
+2026-09-24T09:55:14.5332247Z   GH_AW_PR_HEAD_BASE_REPO: 
+2026-09-24T09:55:14.5332940Z   GH_AW_PR_HEAD_BASE_SHA: 
+2026-09-24T09:55:14.5333292Z   GH_AW_PR_HEAD_REPO: 
+2026-09-24T09:55:14.5333817Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-24T09:55:14.5334241Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-09-24T09:55:14.5334840Z   GITHUB_AW_OTEL_TRACE_ID: 28d2611f835cae9a05f94196f4e92203
+2026-09-24T09:55:14.5335351Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 33fc805f2391a6c3
+2026-09-24T09:55:14.5335932Z   GITHUB_AW_OTEL_JOB_START_MS: 1790243638317
+2026-09-24T09:55:14.5336394Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-09-24T09:55:14.5337106Z   GH_AW_AIC: 15.57758
+2026-09-24T09:55:14.5337498Z   GH_AW_AMBIENT_CONTEXT: 7280
+2026-09-24T09:55:14.5337965Z   GH_AW_PRIMARY_MODEL: claude-sonnet-5
+2026-09-24T09:55:14.5338448Z ##[endgroup]
+2026-09-24T09:55:14.6959576Z With the provided path, there will be 31 files uploaded
+2026-09-24T09:55:14.6964811Z Artifact name is valid!
+2026-09-24T09:55:14.6965787Z Root directory input is valid!
+2026-09-24T09:55:14.9816848Z Uploading artifact: agent.zip
+2026-09-24T09:55:14.9856928Z Beginning upload of artifact content to blob storage
+2026-09-24T09:55:15.2999731Z Uploaded bytes 245120
+2026-09-24T09:55:15.3336761Z Finished uploading artifact content to blob storage!
+2026-09-24T09:55:15.3337742Z SHA256 digest of uploaded artifact is 8c056b8d0dad656335b746ee0fff1b52db6fdbbc5f90f214c6fe30ffc139093d
+2026-09-24T09:55:15.3338604Z Finalizing artifact upload
+2026-09-24T09:55:15.6078628Z Artifact agent successfully finalized. Artifact ID 10801198182
+2026-09-24T09:55:15.6079606Z Artifact agent has been successfully uploaded! Final size is 245120 bytes. Artifact ID is 10801198182
+2026-09-24T09:55:15.6083805Z Artifact download URL: https://github.com/matteogazzato/skills-agentic-workflows-that-read-the-room/actions/runs/35983972808/artifacts/10801198182

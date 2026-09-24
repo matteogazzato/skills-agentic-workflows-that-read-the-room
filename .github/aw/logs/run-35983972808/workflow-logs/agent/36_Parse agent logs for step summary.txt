@@ -1,0 +1,48 @@
+﻿2026-09-24T09:55:12.3467135Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-24T09:55:12.3467586Z with:
+2026-09-24T09:55:12.3468720Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'parse_copilot_log.cjs'));
+await main();
+
+2026-09-24T09:55:12.3472154Z   github-token: ***
+2026-09-24T09:55:12.3472392Z   debug: false
+2026-09-24T09:55:12.3472627Z   user-agent: actions/github-script
+2026-09-24T09:55:12.3473142Z   result-encoding: json
+2026-09-24T09:55:12.3473398Z   retries: 0
+2026-09-24T09:55:12.3473660Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-24T09:55:12.3473985Z env:
+2026-09-24T09:55:12.3474212Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-24T09:55:12.3474515Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-24T09:55:12.3475460Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=matteogazzato/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=35983972808,github.run_id=35983972808,gh-aw.engine.id=copilot
+2026-09-24T09:55:12.3476392Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-24T09:55:12.3476697Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-24T09:55:12.3477014Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-24T09:55:12.3477274Z   DEFAULT_BRANCH: main
+2026-09-24T09:55:12.3477522Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-09-24T09:55:12.3477776Z   GH_AW_ASSETS_BRANCH: 
+2026-09-24T09:55:12.3478014Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-09-24T09:55:12.3478316Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-09-24T09:55:12.3478639Z   GH_AW_PR_HEAD_BASE_BRANCH: 
+2026-09-24T09:55:12.3478902Z   GH_AW_PR_HEAD_BASE_PR_NUMBER: 
+2026-09-24T09:55:12.3479186Z   GH_AW_PR_HEAD_BASE_REF: 
+2026-09-24T09:55:12.3479439Z   GH_AW_PR_HEAD_BASE_REPO: 
+2026-09-24T09:55:12.3479699Z   GH_AW_PR_HEAD_BASE_SHA: 
+2026-09-24T09:55:12.3479952Z   GH_AW_PR_HEAD_REPO: 
+2026-09-24T09:55:12.3480388Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-24T09:55:12.3480676Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-09-24T09:55:12.3481056Z   GITHUB_AW_OTEL_TRACE_ID: 28d2611f835cae9a05f94196f4e92203
+2026-09-24T09:55:12.3481440Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 33fc805f2391a6c3
+2026-09-24T09:55:12.3481786Z   GITHUB_AW_OTEL_JOB_START_MS: 1790243638317
+2026-09-24T09:55:12.3482127Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/sandbox/agent/logs/
+2026-09-24T09:55:12.3482566Z   GH_AW_SAFE_OUTPUTS: /home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl
+2026-09-24T09:55:12.3483267Z ##[endgroup]
+2026-09-24T09:55:12.4670663Z Copilot log parsed successfully
+2026-09-24T09:55:12.4685113Z 
+2026-09-24T09:55:12.4685410Z Safe Outputs Preview:
+2026-09-24T09:55:12.4685816Z   Total: 1 entry
+2026-09-24T09:55:12.4686030Z 
+2026-09-24T09:55:12.4686180Z   [1] missing_tool
+2026-09-24T09:55:12.4686870Z       Reason: The task requires fetching https://github.blog/latest/, https://github.blog/chan...

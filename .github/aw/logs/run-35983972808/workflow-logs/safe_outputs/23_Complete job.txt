@@ -1,0 +1,13 @@
+﻿2026-09-24T09:56:47.6975529Z Evaluate and set job outputs
+2026-09-24T09:56:47.7008538Z Set output 'code_push_failure_count'
+2026-09-24T09:56:47.7081622Z Set output 'create_discussion_error_count'
+2026-09-24T09:56:47.7083379Z Set output 'process_safe_outputs_items_applied'
+2026-09-24T09:56:47.7084300Z Set output 'process_safe_outputs_items_cancelled'
+2026-09-24T09:56:47.7085613Z Set output 'process_safe_outputs_items_deferred'
+2026-09-24T09:56:47.7086519Z Set output 'process_safe_outputs_items_failed'
+2026-09-24T09:56:47.7087386Z Set output 'process_safe_outputs_items_skipped'
+2026-09-24T09:56:47.7088261Z Set output 'process_safe_outputs_items_succeeded'
+2026-09-24T09:56:47.7089144Z Set output 'process_safe_outputs_items_warnings'
+2026-09-24T09:56:47.7090056Z Set output 'process_safe_outputs_processed_count'
+2026-09-24T09:56:47.7090962Z Set output 'process_safe_outputs_status'
+2026-09-24T09:56:47.7092741Z Cleaning up orphan processes

@@ -1,0 +1,46 @@
+﻿2026-09-24T09:53:43.7538282Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-09-24T09:53:43.7539776Z with:
+2026-09-24T09:53:43.7540583Z   name: activation
+2026-09-24T09:53:43.7541475Z   include-hidden-files: true
+2026-09-24T09:53:43.7545303Z   path: /tmp/gh-aw/aw_info.json
+/tmp/gh-aw/models.json
+/tmp/gh-aw/aw-prompts/prompt.txt
+/tmp/gh-aw/aw-prompts/prompt-template.txt
+/tmp/gh-aw/aw-prompts/prompt-import-tree.json
+/tmp/gh-aw/github_rate_limits.jsonl
+/tmp/gh-aw/base
+/tmp/gh-aw/.github/agents
+/tmp/gh-aw/.github/skills
+
+2026-09-24T09:53:43.7549049Z   if-no-files-found: ignore
+2026-09-24T09:53:43.7550026Z   retention-days: 1
+2026-09-24T09:53:43.7550879Z   compression-level: 6
+2026-09-24T09:53:43.7551767Z   overwrite: false
+2026-09-24T09:53:43.7552936Z   archive: true
+2026-09-24T09:53:43.7553784Z env:
+2026-09-24T09:53:43.7554586Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-24T09:53:43.7555654Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-24T09:53:43.7558948Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=matteogazzato/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=35983972808,github.run_id=35983972808,gh-aw.engine.id=copilot
+2026-09-24T09:53:43.7562982Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-24T09:53:43.7564162Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-24T09:53:43.7565529Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-24T09:53:43.7586676Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-09-24T09:53:43.7587836Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-24T09:53:43.7588967Z   GITHUB_AW_OTEL_TRACE_ID: 28d2611f835cae9a05f94196f4e92203
+2026-09-24T09:53:43.7590314Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: b1be0cd0bcab41bc
+2026-09-24T09:53:43.7591509Z   GITHUB_AW_OTEL_JOB_START_MS: 1790243614845
+2026-09-24T09:53:43.7592838Z ##[endgroup]
+2026-09-24T09:53:43.9875904Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-09-24T09:53:43.9884475Z The least common ancestor is /tmp/gh-aw. This will be the root directory of the artifact
+2026-09-24T09:53:43.9886325Z With the provided path, there will be 40 files uploaded
+2026-09-24T09:53:43.9897271Z Artifact name is valid!
+2026-09-24T09:53:43.9898295Z Root directory input is valid!
+2026-09-24T09:53:44.3570096Z Uploading artifact: activation.zip
+2026-09-24T09:53:44.3637743Z Beginning upload of artifact content to blob storage
+2026-09-24T09:53:45.0452988Z Uploaded bytes 655870
+2026-09-24T09:53:45.1119971Z Finished uploading artifact content to blob storage!
+2026-09-24T09:53:45.1126465Z SHA256 digest of uploaded artifact is 187e0f3b4f2b3ea6eea3ab98d97957bc5c1136ac45750fb56e6f8f9aec195405
+2026-09-24T09:53:45.1129977Z Finalizing artifact upload
+2026-09-24T09:53:45.4893304Z Artifact activation successfully finalized. Artifact ID 10800394864
+2026-09-24T09:53:45.4901048Z Artifact activation has been successfully uploaded! Final size is 655870 bytes. Artifact ID is 10800394864
+2026-09-24T09:53:45.4921812Z Artifact download URL: https://github.com/matteogazzato/skills-agentic-workflows-that-read-the-room/actions/runs/35983972808/artifacts/10800394864

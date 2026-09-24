@@ -1,0 +1,52 @@
+﻿2026-09-24T09:56:31.1221340Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-24T09:56:31.1221701Z with:
+2026-09-24T09:56:31.1222593Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'parse_token_usage.cjs'));
+await main();
+
+2026-09-24T09:56:31.1225612Z   github-token: ***
+2026-09-24T09:56:31.1225815Z   debug: false
+2026-09-24T09:56:31.1226023Z   user-agent: actions/github-script
+2026-09-24T09:56:31.1226269Z   result-encoding: json
+2026-09-24T09:56:31.1226467Z   retries: 0
+2026-09-24T09:56:31.1226713Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-24T09:56:31.1227034Z env:
+2026-09-24T09:56:31.1227294Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-24T09:56:31.1227555Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-24T09:56:31.1228310Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=matteogazzato/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=35983972808,github.run_id=35983972808,gh-aw.engine.id=copilot
+2026-09-24T09:56:31.1229062Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-24T09:56:31.1229331Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-24T09:56:31.1229612Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-24T09:56:31.1229835Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-24T09:56:31.1230090Z   GITHUB_AW_OTEL_TRACE_ID: 28d2611f835cae9a05f94196f4e92203
+2026-09-24T09:56:31.1230560Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 25dfe4067bc218c3
+2026-09-24T09:56:31.1230831Z   GITHUB_AW_OTEL_JOB_START_MS: 1790243726559
+2026-09-24T09:56:31.1231105Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-09-24T09:56:31.1231419Z   GH_AW_TOKEN_USAGE_SUMMARY_TITLE: Threat Detection Token Usage
+2026-09-24T09:56:31.1231795Z   GH_AW_AGENT_USAGE_PATH: /tmp/gh-aw/threat-detection/detection_usage.json
+2026-09-24T09:56:31.1232196Z   GH_AW_AGENT_USAGE_JSONL_PATH: /tmp/gh-aw/threat-detection/detection_usage.jsonl
+2026-09-24T09:56:31.1232548Z   GH_AW_WRITE_EMPTY_USAGE: true
+2026-09-24T09:56:31.1232758Z ##[endgroup]
+2026-09-24T09:56:31.2101031Z Parsing token usage from 1 file(s): /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl (5900 bytes)
+2026-09-24T09:56:31.2213153Z Threat Detection Token Usage
+2026-09-24T09:56:31.2213461Z 
+2026-09-24T09:56:31.2214259Z # | Alias | Input | Output | Cache Read | Cache Write | ΔAI Credits | AI Credits | Duration 
+2026-09-24T09:56:31.2214693Z 
+2026-09-24T09:56:31.2214983Z  1 | haiku45 | 11,945 | 146 | 6,672 | 5,336 | 2.00122 | 2.00122 | 2.2s 
+2026-09-24T09:56:31.2215572Z  2 | haiku45 | 7 | 99 | 12,008 | 12,495 | 1.732155 | 3.733375 | 1.7s 
+2026-09-24T09:56:31.2216095Z  3 | haiku45 | 5 | 128 | 24,503 | 259 | 0.341905 | 4.07528 | 2.1s 
+2026-09-24T09:56:31.2216644Z  4 | haiku45 | 5 | 130 | 24,762 | 328 | 0.35412 | 4.4294 | 1.7s 
+2026-09-24T09:56:31.2217196Z  5 | haiku45 | 5 | 141 | 25,090 | 323 | 0.362275 | 4.791675 | 1.9s 
+2026-09-24T09:56:31.2217780Z  6 | haiku45 | 5 | 186 | 25,413 | 344 | 0.39063 | 5.182305 | 2.4s 
+2026-09-24T09:56:31.2218309Z  7 | haiku45 | 5 | 128 | 25,757 | 300 | 0.35957 | 5.541875 | 2.0s 
+2026-09-24T09:56:31.2218796Z  8 | haiku45 | 5 | 511 | 26,057 | 768 | 0.61257 | 6.154445 | 7.4s 
+2026-09-24T09:56:31.2219342Z  Total |  | 11,982 | 1,469 | 170,262 | 20,153 |  | 6.154445 | 21.4s 
+2026-09-24T09:56:31.2219653Z 
+2026-09-24T09:56:31.2221027Z Legend: `Alias` shows the model shorthand used in the table. `ΔAI Credits` is the per-request cost, and `AI Credits` is the running total mirrored from AWF fields for reporting.
+2026-09-24T09:56:31.2222123Z Token usage summary appended to step summary
+2026-09-24T09:56:31.2223079Z Primary model: claude-haiku-4.5
+2026-09-24T09:56:31.2235468Z AI Credits: 6.154445
+2026-09-24T09:56:31.2237988Z Ambient context: 13146

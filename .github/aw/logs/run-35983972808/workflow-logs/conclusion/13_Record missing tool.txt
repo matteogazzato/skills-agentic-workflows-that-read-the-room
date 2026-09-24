@@ -1,0 +1,32 @@
+﻿2026-09-24T09:57:03.8422908Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-24T09:57:03.8423755Z with:
+2026-09-24T09:57:03.8428165Z   github-token: ***
+2026-09-24T09:57:03.8430243Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'missing_tool.cjs'));
+await main();
+
+2026-09-24T09:57:03.8432413Z   debug: false
+2026-09-24T09:57:03.8432962Z   user-agent: actions/github-script
+2026-09-24T09:57:03.8433562Z   result-encoding: json
+2026-09-24T09:57:03.8434077Z   retries: 0
+2026-09-24T09:57:03.8434599Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-24T09:57:03.8435244Z env:
+2026-09-24T09:57:03.8435923Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-24T09:57:03.8436555Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-24T09:57:03.8438855Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=matteogazzato/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=35983972808,github.run_id=35983972808,gh-aw.engine.id=copilot
+2026-09-24T09:57:03.8440578Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-24T09:57:03.8441196Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-24T09:57:03.8441863Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-24T09:57:03.8442421Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-24T09:57:03.8443061Z   GITHUB_AW_OTEL_TRACE_ID: 28d2611f835cae9a05f94196f4e92203
+2026-09-24T09:57:03.8443814Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 14aef2abca87e063
+2026-09-24T09:57:03.8444506Z   GITHUB_AW_OTEL_JOB_START_MS: 1790243819416
+2026-09-24T09:57:03.8445187Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-09-24T09:57:03.8446050Z   GH_AW_MISSING_TOOL_CREATE_ISSUE: true
+2026-09-24T09:57:03.8446683Z   GH_AW_WORKFLOW_NAME: update-github-info
+2026-09-24T09:57:03.8447992Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/matteogazzato/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md
+2026-09-24T09:57:03.8449457Z ##[endgroup]
+2026-09-24T09:57:03.9766319Z Max count: unlimited
